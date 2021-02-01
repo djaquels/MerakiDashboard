@@ -1,0 +1,43 @@
+body{
+    background: url('../../images/welcome.jpg') no-repeat 10% 30% ;
+    background-size: cover;
+}
+.container{
+    padding: 5%;
+}
+.center{
+    text-align: center;
+}
+.white{
+    color:#fff;
+}
+.form{
+    width: 100%;
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+input {
+    background: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 55%;
+    color: #fff;
+    margin-right: 5px;
+}
+
+input:active {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;   
+}
+
+.center-container{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
