@@ -9,13 +9,13 @@ export default class Homme extends Component {
     render() {
         return(
             <div className="container">
-            <h1 className="center white">Welcome To Hippo Bank</h1>
-            <h2 className="center white"> Manage all your financial obligations in a friendly manner.</h2>
-            <form className="center-container">
-                <label for="e-mail" className="register"> E-mail: </label>
-                <input type="email" className="e-mail" name="e-mail" id="e-mail" required/>
-                <button className=" btn btn-primary"> Sign up </button>
-            </form>
+            <h1 className="center white">Welcome To Hippo Meraki </h1>
+            <h2 className="center white"> The FrontEnd Page for your CISCO Meraki APIS Products</h2>
+            <div className="center white">
+            <Link to="/dashboard">
+                <span className="btn btn-primary">show</span>
+            </Link>
+            </div>
             </div>
         )
     }

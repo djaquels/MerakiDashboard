@@ -1,5 +1,5 @@
 body{
-    background: url('../../images/welcome.jpg');
+    background: url('../../images/organization.jpg');
     background-position: center center;
   
   /* Background image doesn't tile */
@@ -15,7 +15,7 @@ body{
   
   /* Set a background color that will be displayed
      while the background image is loading */
-  background-color: #464646;
+  background-color: #fff;
 }
 .container{
     padding: 5%;
@@ -55,4 +55,22 @@ input:active {
     margin: auto;
     width: 50%;
     padding: 10px;
+}
+
+.organization {
+    background-color:blanchedalmond;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+.organization h1 {
+    text-align: center;
+}
+
+.organization a {
+    color: #fff;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: black;
 }

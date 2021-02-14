@@ -11,7 +11,7 @@ class Navbar extends React.Component {
         <div className="container-fluid">
             <Link to="/">
                  <img className="logo" src={hippo}/>
-                 <span className="font-weight-light">Hippo</span><span className="font-weight-bold">Bank</span>
+                 <span className="font-weight-light">Hippo</span><span className="font-weight-bold">Meraki</span>
             </Link>
             <div className="links">
                 <Link to="/login">

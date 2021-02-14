@@ -1,3 +1,23 @@
 .card{
+    background: blanchedalmond;
     padding: 5%;
+    min-height: 550px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.header {
+    font-size: small;
+}
+.header h1 {
+    font-size: 18px;
+}
+.false{
+    background-color: teal;
+    color: white;
+    padding: 1%;
+}
+.true {
+    background-color: tomato;
+    color: white;
+    padding: 1%;
 }

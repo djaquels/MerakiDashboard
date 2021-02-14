@@ -5,6 +5,8 @@ import Layout from './Layout';
 
 import Home from '../pages/Home';
 import About from '../pages/About';
+import Dashboard from '../pages/Dashboard'
+import Network from '../pages/Network'
 function App(){
     return(
         <BrowserRouter>
@@ -12,6 +14,8 @@ function App(){
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/about" component={About}/>
+                    <Route exact path="/dashboard" component={Dashboard}/>
+                    <Route exact path="/network" component={Network}/>
                 </Switch>
             </Layout>
         </BrowserRouter>

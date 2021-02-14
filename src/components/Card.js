@@ -3,24 +3,40 @@ import React from 'react';
 import './styles/Card.css';
 
 
+
+const icons = {"camera" : <i class="fas fa-video"></i> ,
+                "appliance":<i class="fas fa-blender-phone"></i>,
+                "switch":<i class="fas fa-network-wired"></i>,
+                "wireless":<i class="fas fa-wifi"></i>,
+                "systems manager":<i class="fas fa-people-carry"></i>
+};
+
 class Card extends React.Component {
     render() {
-        return(
-                <div className="row">
-                    <div className="col-sm-6" >
+        return(      
+                    <div className="col-sm-3" >
                         <div className="card">
-                            <div className="image">
-                                <img src={this.props.image}/>
+                            <div className="header">
+                                <h1>{this.props.name}</h1>
                             </div>
-                            <div className="Header">
-                                <h1>{this.props.title}</h1>
+                            <div className="id">
+                                <p>{this.props.id}</p>
                             </div>
-                            <div className="Body">
-                                <p>{this.props.body}</p>
+                            <div>
+                                <span className={this.props.enabledMeraki.toString()}> Enabled </span>
+                            </div>
+                            <div className="timezone">
+                             <p><i class="fas fa-globe-europe"></i> {this.props.timeZone}</p>
+                            </div>
+                            <div className="products">
+                                <ul> {this.props.productTypes.length} Products
+                            {this.props.productTypes.map( product => {
+                                    return <li>{product} {icons[product]}</li>
+                                })}
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
         )
     }
 }

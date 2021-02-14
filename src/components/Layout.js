@@ -8,7 +8,10 @@ function Layout(props) {
     return(
          <React.Fragment>
              <Navbar/>
+             <div className="container">
              {props.children}
+             </div>
+             
              <Footer/>
          </React.Fragment>
     );
